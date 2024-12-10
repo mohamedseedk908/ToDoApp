@@ -9,11 +9,7 @@ class ToDoApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return EasyLocalization(
-      supportedLocales:  [Locale('en'), Locale("ar")],
-      path: 'assets/translations', // <-- change the path of the translation files
-      fallbackLocale: Locale('en'),
-      child: ScreenUtilInit(
+    return ScreenUtilInit(
         designSize: const Size(360, 690),
         minTextAdapt: true,
         splitScreenMode: true,
@@ -28,7 +24,6 @@ class ToDoApp extends StatelessWidget {
             home: const SplashScreen(),
           );
         },
-      ),
-    );
+      );
   }
 }
