@@ -1,0 +1,11 @@
+{
+"toDoApp": "To Do App",
+  "logout": "Logout",
+  "addTask": "Add Task",
+  "task": "Task",
+  "description": "Description",
+  "status":"Status",
+  "startDate": "Start Date",
+  "endDate": "End Date",
+  "submit": "SubMit"
+}
