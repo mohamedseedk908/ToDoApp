@@ -2,6 +2,8 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo/view/screens/splash_screen.dart';
+import 'package:todo/view_model/themes/dark_theme.dart';
+import 'package:todo/view_model/themes/light_theme.dart';
 
 class ToDoApp extends StatelessWidget {
   const ToDoApp({super.key});
@@ -21,6 +23,9 @@ class ToDoApp extends StatelessWidget {
             supportedLocales: context.supportedLocales,
             locale: context.locale,
             title: 'ToDoApp',
+            theme: lightTheme,
+            darkTheme: darkTheme,
+            themeMode: ThemeMode.light,
             home: const SplashScreen(),
           );
         },
